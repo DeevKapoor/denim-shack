@@ -1,8 +1,7 @@
-"use client"
-
+"use client";
 import Image from "next/image"
 import Link from "next/link"
-import { Button } from "@/components/ui/button"
+import { Button } from "../components/ui/button"
 import { CategoryNav } from "@/components/category-nav"
 import { TrendingProducts } from "@/components/trending-products"
 import { InstagramFeed } from "@/components/instagram-feed"
@@ -50,7 +49,7 @@ export default function Home() {
             <Link href="/men" className="group relative overflow-hidden">
               <div className="relative aspect-[4/5]">
                 <Image
-                  src="/men-collection.jpg"
+                  src="/placeholder.svg"
                   alt="Men's Collection"
                   fill
                   className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -68,7 +67,7 @@ export default function Home() {
               <Link href="/women" className="group relative overflow-hidden">
                 <div className="relative aspect-[16/9]">
                   <Image
-                    src="/women-collection.jpg"
+                    src="/placeholder.svg"
                     alt="Women's Collection"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -85,7 +84,7 @@ export default function Home() {
               <Link href="/accessories" className="group relative overflow-hidden">
                 <div className="relative aspect-[16/9]">
                   <Image
-                    src="/accessories-collection.jpg"
+                    src="/placeholder.svg"
                     alt="Accessories"
                     fill
                     className="object-cover transition-transform duration-700 group-hover:scale-105"
@@ -134,7 +133,7 @@ export default function Home() {
               <Button size="lg">Learn More</Button>
             </div>
             <div className="relative aspect-square">
-              <Image src="/brand-story.jpg" alt="Brand Story" fill className="object-cover rounded-lg" />
+              <Image src="/placeholder.svg" alt="Brand Story" fill className="object-cover rounded-lg" />
             </div>
           </div>
         </div>
@@ -156,3 +155,4 @@ export default function Home() {
     </div>
   )
 }
+
